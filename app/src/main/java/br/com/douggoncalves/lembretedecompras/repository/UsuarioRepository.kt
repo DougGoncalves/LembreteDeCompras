@@ -1,5 +1,6 @@
 package br.com.douggoncalves.lembretedecompras.repository
 
+
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -9,9 +10,9 @@ import br.com.douggoncalves.lembretedecompras.models.Usuario
 class UsuarioRepository(val context: Context) {
     fun logar(usuario: Usuario): LiveData<RequestState<String>> {
         val response = MutableLiveData<RequestState<String>>()
-        if (usuario.email == "compra@facil.com.br" && usuario.senha == "123456"
+        if (usuario.email == "user@fiap.com.br" && usuario.senha == "123456"
         ) {
-            val pref = context.getSharedPreferences("lembretedecompras", 0)
+            val pref = context.getSharedPreferences("lembretedecompras", 0);
             val editor = pref.edit()
             editor.putString("email", usuario.email)
             editor.apply()

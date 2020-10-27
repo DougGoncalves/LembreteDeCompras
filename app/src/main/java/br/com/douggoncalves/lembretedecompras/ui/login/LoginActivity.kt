@@ -9,7 +9,6 @@ import android.view.animation.AnimationUtils
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import br.com.douggoncalves.lembretedecompras.R
-import br.com.douggoncalves.lembretedecompras.models.LoginViewModel
 import br.com.douggoncalves.lembretedecompras.models.RequestState
 import br.com.douggoncalves.lembretedecompras.models.Usuario
 import br.com.douggoncalves.lembretedecompras.ui.main.MainActivity
