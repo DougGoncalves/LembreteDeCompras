@@ -27,8 +27,10 @@ class ProdutoListaAdapter internal constructor( context: Context
         val current = produtos[position]
         holder.produtoItemView.text = current.nome
     }
+
     internal fun setProdutos(produtos: List<Produto>) {
-        this.produtos = produtos notifyDataSetChanged()
+        this.produtos = produtos
+        notifyDataSetChanged()
     }
 
     override fun getItemCount() = produtos.size

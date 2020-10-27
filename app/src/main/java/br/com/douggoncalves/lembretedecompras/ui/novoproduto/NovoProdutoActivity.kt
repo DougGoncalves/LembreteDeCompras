@@ -15,6 +15,7 @@ class NovoProdutoActivity : AppCompatActivity() {
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_novo_produto)
+
         etProduto = findViewById(R.id.etProduto)
 
         val button = findViewById<Button>(R.id.btSalvar)
